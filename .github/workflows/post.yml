@@ -1,0 +1,50 @@
+name: post
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+    inputs:
+      check_only:
+        description: 'Only test the Instagram connection (posts nothing)'
+        type: boolean
+        default: true
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: post
+  cancel-in-progress: false
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check connection only
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.check_only }}
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python3 scripts/post.py --check
+      - name: Publish due posts
+        if: ${{ github.event_name == 'schedule' || !inputs.check_only }}
+        id: pub
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python3 scripts/post.py
+        continue-on-error: true
+      - name: Save state and notify
+        if: ${{ github.event_name == 'schedule' || !inputs.check_only }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f notes.md ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+            mv notes.md /tmp/notes.md
+            git add schedule.json
+            git commit -m "Update post status" || true
+            git pull --rebase -q origin main && git push -q origin HEAD:main || true
+            gh issue create --title "$(head -1 /tmp/notes.md | cut -c1-80)" --body-file /tmp/notes.md || true
+          fi
+      - name: Fail the run if a post failed
+        if: ${{ steps.pub.outcome == 'failure' }}
+        run: exit 1

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Market-open Trump news image",
+    "at": "2026-10-25T21:30:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-10-26-market-open-trump.jpg"
+    ],
+    "caption": "captions/2026-10-26-market-open-news.txt",
+    "status": "queued"
+  },
+  {
+    "name": "Week-ahead events image",
+    "at": "2026-10-26T04:00:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-10-26-week-ahead.jpg"
+    ],
+    "caption": "captions/2026-10-26-week-ahead.txt",
+    "status": "queued"
+  },
+  {
+    "name": "How I blew my accounts carousel",
+    "at": "2026-10-26T12:30:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-10-26-blown-accounts-1.jpg",
+      "media/2026-10-26-blown-accounts-2.jpg",
+      "media/2026-10-26-blown-accounts-3.jpg",
+      "media/2026-10-26-blown-accounts-4.jpg",
+      "media/2026-10-26-blown-accounts-5.jpg",
+      "media/2026-10-26-blown-accounts-6.jpg",
+      "media/2026-10-26-blown-accounts-7.jpg"
+    ],
+    "caption": "captions/2026-10-26-blown-accounts.txt",
+    "status": "queued"
+  },
+  {
+    "name": "GREED RISK ONE MORE TRADE image",
+    "at": "2026-10-27T12:30:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-10-27-greed-risk-one-more.jpg"
+    ],
+    "caption": "captions/2026-10-27-greed-risk-one-more.txt",
+    "status": "queued"
+  },
+  {
+    "name": "Fed day image",
+    "at": "2026-10-28T07:30:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-10-28-fed-tonight.jpg"
+    ],
+    "caption": "captions/2026-10-28-fed-tonight.txt",
+    "status": "queued"
+  }
+]
