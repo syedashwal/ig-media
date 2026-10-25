@@ -7,7 +7,7 @@
       "media/2026-10-26-market-open-trump.jpg"
     ],
     "caption": "captions/2026-10-26-market-open-news.txt",
-    "status": "queued"
+    "status": "held"
   },
   {
     "name": "Week-ahead events image",
@@ -17,7 +17,7 @@
       "media/2026-10-26-week-ahead.jpg"
     ],
     "caption": "captions/2026-10-26-week-ahead.txt",
-    "status": "queued"
+    "status": "held"
   },
   {
     "name": "How I blew my accounts carousel",
@@ -33,7 +33,7 @@
       "media/2026-10-26-blown-accounts-7.jpg"
     ],
     "caption": "captions/2026-10-26-blown-accounts.txt",
-    "status": "queued"
+    "status": "held"
   },
   {
     "name": "GREED RISK ONE MORE TRADE image",
@@ -43,7 +43,7 @@
       "media/2026-10-27-greed-risk-one-more.jpg"
     ],
     "caption": "captions/2026-10-27-greed-risk-one-more.txt",
-    "status": "queued"
+    "status": "held"
   },
   {
     "name": "Fed day image",
@@ -53,6 +53,6 @@
       "media/2026-10-28-fed-tonight.jpg"
     ],
     "caption": "captions/2026-10-28-fed-tonight.txt",
-    "status": "queued"
+    "status": "held"
   }
 ]
