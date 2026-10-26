@@ -93,5 +93,17 @@
     "caption": "captions/2026-10-28-fed-tonight.txt",
     "status": "queued",
     "note": "backup: posted by GitHub only if Claude has not already posted it"
+  },
+  {
+    "name": "What is ICT reel",
+    "at": "2026-10-28T12:50:00Z",
+    "type": "reel",
+    "media": [
+      "media/2026-10-28-what-is-ict-reel.mp4"
+    ],
+    "cover": "media/2026-10-28-what-is-ict-reel-cover.jpg",
+    "caption": "captions/2026-10-28-what-is-ict-reel.txt",
+    "status": "queued",
+    "note": "backup: posted by GitHub only if Claude has not already posted it"
   }
 ]
