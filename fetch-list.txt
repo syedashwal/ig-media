@@ -1,2 +1,3 @@
-source/warsh-official.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Official_portrait_of_Kevin_M._Warsh.jpg?width=1600
-source/warsh-swearing.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Federal_Reserve_Chair_Kevin_Warsh_delivers_remarks_at_his_swearing-in_ceremony_in_the_East_Room_of_the_White_House,_Friday,_May_22,_2026._(Cropped).jpg?width=1600
+source/warsh-c1.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Official_portrait_of_Kevin_M._Warsh_(cropped).jpg?width=1600
+source/warsh-c2.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Chair_of_the_Federal_Reserve_Kevin_Warsh_at_the_White_House_on_May_22,_2026_(cropped).jpg?width=1600
+source/warsh-c3.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Kevin_Warsh_webtake_(cropped).jpg?width=1600
