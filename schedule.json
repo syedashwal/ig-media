@@ -54,8 +54,8 @@
       "media/2026-10-27-what-is-ict-7.jpg"
     ],
     "caption": "captions/2026-10-27-what-is-ict.txt",
-    "status": "queued",
-    "note": "backup: posted by GitHub only if Claude has not already posted it"
+    "status": "held",
+    "note": "held: Ashwal wants this as a reel instead"
   },
   {
     "name": "GREED RISK ONE MORE TRADE image",
