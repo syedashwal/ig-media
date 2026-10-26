@@ -103,7 +103,7 @@
       "media/2026-10-27-greed-risk-one-more.jpg"
     ],
     "caption": "captions/2026-10-27-greed-risk-one-more.txt",
-    "status": "queued",
-    "note": "backup: posted by GitHub only if Claude has not already posted it"
+    "status": "held",
+    "note": "dropped by Ashwal (2026-10-26)"
   }
 ]
