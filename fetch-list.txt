@@ -1,1 +1,1 @@
-source/warsh-search.json https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=Kevin+Warsh&srnamespace=6&srlimit=15&format=json
+source/warsh-fed-portrait.jpg https://commons.wikimedia.org/wiki/Special:FilePath/Kevin_Warsh,_Federal_Reserve_photo_portrait.jpg?width=1600
