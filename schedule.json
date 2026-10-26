@@ -58,13 +58,14 @@
     "note": "held: Ashwal wants this as a reel instead"
   },
   {
-    "name": "GREED RISK ONE MORE TRADE image",
+    "name": "What is ICT reel",
     "at": "2026-10-27T12:50:00Z",
-    "type": "image",
+    "type": "reel",
     "media": [
-      "media/2026-10-27-greed-risk-one-more.jpg"
+      "media/2026-10-28-what-is-ict-reel.mp4"
     ],
-    "caption": "captions/2026-10-27-greed-risk-one-more.txt",
+    "cover": "media/2026-10-28-what-is-ict-reel-cover.jpg",
+    "caption": "captions/2026-10-28-what-is-ict-reel.txt",
     "status": "queued",
     "note": "backup: posted by GitHub only if Claude has not already posted it"
   },
@@ -95,14 +96,13 @@
     "note": "backup: posted by GitHub only if Claude has not already posted it"
   },
   {
-    "name": "What is ICT reel",
-    "at": "2026-10-28T12:50:00Z",
-    "type": "reel",
+    "name": "GREED RISK ONE MORE TRADE image",
+    "at": "2026-10-31T14:20:00Z",
+    "type": "image",
     "media": [
-      "media/2026-10-28-what-is-ict-reel.mp4"
+      "media/2026-10-27-greed-risk-one-more.jpg"
     ],
-    "cover": "media/2026-10-28-what-is-ict-reel-cover.jpg",
-    "caption": "captions/2026-10-28-what-is-ict-reel.txt",
+    "caption": "captions/2026-10-27-greed-risk-one-more.txt",
     "status": "queued",
     "note": "backup: posted by GitHub only if Claude has not already posted it"
   }
