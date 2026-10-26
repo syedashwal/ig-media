@@ -18,8 +18,9 @@
       "media/2026-10-26-week-ahead.jpg"
     ],
     "caption": "captions/2026-10-26-week-ahead.txt",
-    "status": "queued",
-    "note": "backup: posted by GitHub only if Claude has not already posted it"
+    "status": "posted",
+    "note": "backup: posted by GitHub only if Claude has not already posted it",
+    "permalink": "https://www.instagram.com/p/De8W7HLAIw3/"
   },
   {
     "name": "How I blew my accounts carousel",
