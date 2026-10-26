@@ -12,17 +12,18 @@
   },
   {
     "name": "Week-ahead events image",
-    "at": "2026-10-26T04:00:00Z",
+    "at": "2026-10-26T04:20:00Z",
     "type": "image",
     "media": [
       "media/2026-10-26-week-ahead.jpg"
     ],
     "caption": "captions/2026-10-26-week-ahead.txt",
-    "status": "held"
+    "status": "queued",
+    "note": "backup: posted by GitHub only if Claude has not already posted it"
   },
   {
     "name": "How I blew my accounts carousel",
-    "at": "2026-10-26T12:30:00Z",
+    "at": "2026-10-26T12:50:00Z",
     "type": "carousel",
     "media": [
       "media/2026-10-26-blown-accounts-1.jpg",
@@ -34,26 +35,29 @@
       "media/2026-10-26-blown-accounts-7.jpg"
     ],
     "caption": "captions/2026-10-26-blown-accounts.txt",
-    "status": "held"
+    "status": "queued",
+    "note": "backup: posted by GitHub only if Claude has not already posted it"
   },
   {
     "name": "GREED RISK ONE MORE TRADE image",
-    "at": "2026-10-27T12:30:00Z",
+    "at": "2026-10-27T12:50:00Z",
     "type": "image",
     "media": [
       "media/2026-10-27-greed-risk-one-more.jpg"
     ],
     "caption": "captions/2026-10-27-greed-risk-one-more.txt",
-    "status": "held"
+    "status": "queued",
+    "note": "backup: posted by GitHub only if Claude has not already posted it"
   },
   {
     "name": "Fed day image",
-    "at": "2026-10-28T07:30:00Z",
+    "at": "2026-10-28T07:50:00Z",
     "type": "image",
     "media": [
       "media/2026-10-28-fed-tonight.jpg"
     ],
     "caption": "captions/2026-10-28-fed-tonight.txt",
-    "status": "held"
+    "status": "queued",
+    "note": "backup: posted by GitHub only if Claude has not already posted it"
   }
 ]
