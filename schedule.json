@@ -41,6 +41,23 @@
     "permalink": "https://www.instagram.com/p/De9TNwwIAtp/"
   },
   {
+    "name": "What is ICT carousel",
+    "at": "2026-10-27T07:50:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-10-27-what-is-ict-1.jpg",
+      "media/2026-10-27-what-is-ict-2.jpg",
+      "media/2026-10-27-what-is-ict-3.jpg",
+      "media/2026-10-27-what-is-ict-4.jpg",
+      "media/2026-10-27-what-is-ict-5.jpg",
+      "media/2026-10-27-what-is-ict-6.jpg",
+      "media/2026-10-27-what-is-ict-7.jpg"
+    ],
+    "caption": "captions/2026-10-27-what-is-ict.txt",
+    "status": "queued",
+    "note": "backup: posted by GitHub only if Claude has not already posted it"
+  },
+  {
     "name": "GREED RISK ONE MORE TRADE image",
     "at": "2026-10-27T12:50:00Z",
     "type": "image",
