@@ -69,6 +69,21 @@
     "note": "backup: posted by GitHub only if Claude has not already posted it"
   },
   {
+    "name": "What is FOMC carousel",
+    "at": "2026-10-28T04:20:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-10-28-what-is-fomc-1.jpg",
+      "media/2026-10-28-what-is-fomc-2.jpg",
+      "media/2026-10-28-what-is-fomc-3.jpg",
+      "media/2026-10-28-what-is-fomc-4.jpg",
+      "media/2026-10-28-what-is-fomc-5.jpg"
+    ],
+    "caption": "captions/2026-10-28-what-is-fomc.txt",
+    "status": "queued",
+    "note": "backup: posted by GitHub only if Claude has not already posted it"
+  },
+  {
     "name": "Fed day image",
     "at": "2026-10-28T07:50:00Z",
     "type": "image",
