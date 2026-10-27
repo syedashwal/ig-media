@@ -1,0 +1,22 @@
+name: Post story
+on:
+  workflow_dispatch:
+    inputs:
+      image:
+        description: "Path of the story image in the repo"
+        required: true
+permissions:
+  contents: read
+  issues: write
+jobs:
+  story:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          IMG: ${{ inputs.image }}
+        run: |
+          if out=$(python3 scripts/story.py "$IMG" 2>&1); then t="Story published"; else t="Story FAILED"; fi
+          gh issue create -R "$GITHUB_REPOSITORY" -t "$t: $IMG" -b "$out"
