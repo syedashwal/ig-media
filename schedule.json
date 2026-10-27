@@ -41,6 +41,19 @@
     "permalink": "https://www.instagram.com/p/De9TNwwIAtp/"
   },
   {
+    "name": "Market size carousel",
+    "at": "2026-10-27T04:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-10-27-market-size-1.jpg",
+      "media/2026-10-27-market-size-2.jpg",
+      "media/2026-10-27-market-size-3.jpg"
+    ],
+    "caption": "captions/2026-10-27-market-size.txt",
+    "status": "posted",
+    "permalink": "https://www.instagram.com/p/De-8riugAHs/"
+  },
+  {
     "name": "What is ICT carousel",
     "at": "2026-10-27T07:50:00Z",
     "type": "carousel",
