@@ -92,6 +92,8 @@ def already_on_instagram(item):
 
 
 def main():
+    if "--serve-hours" in sys.argv:
+        return serve(float(sys.argv[sys.argv.index("--serve-hours") + 1]))
     if "--check" in sys.argv:
         print(call("GET", "/me", fields="username"))
         return 0
@@ -139,6 +141,71 @@ def main():
         open("notes.md", "w").write("\n".join(notes) + "\n")
         print("\n".join(notes))
     return 1 if failed else 0
+
+
+def git(*args):
+    return os.system("git " + " ".join(args))
+
+
+def sync():
+    git("fetch -q origin main")
+    git("reset -q --hard origin/main")
+
+
+def record(item, notes):
+    """Write the item's new state onto the freshest schedule.json and push it, retrying on a race."""
+    for _ in range(4):
+        sync()
+        items = json.load(open("schedule.json", encoding="utf-8"))
+        for i in items:
+            if i["name"] == item["name"]:
+                for k in ("status", "permalink", "media_id", "error"):
+                    if k in item:
+                        i[k] = item[k]
+        json.dump(items, open("schedule.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+        git('config user.name "github-actions[bot]"')
+        git('config user.email "41898299+github-actions[bot]@users.noreply.github.com"')
+        git("add schedule.json")
+        git('commit -q -m "Update post status: %s"' % item["name"].replace('"', ""))
+        if git("push -q origin HEAD:main") == 0:
+            break
+    if notes:
+        open("/tmp/notes.md", "w").write(notes + "\n")
+        os.system('gh issue create --title "%s" --body-file /tmp/notes.md || true' % notes.split("\n")[0][:80].replace('"', ""))
+
+
+def serve(hours):
+    """Poll schedule.json on main every ~30s for hours; post each item at its slot. A post made elsewhere is never repeated."""
+    deadline = time.time() + hours * 3600
+    tries = {}
+    while time.time() < deadline:
+        sync()
+        now = datetime.datetime.now(datetime.timezone.utc)
+        for item in json.load(open("schedule.json", encoding="utf-8")):
+            if item.get("status", "queued") != "queued":
+                continue
+            at = datetime.datetime.fromisoformat(item["at"].replace("Z", "+00:00"))
+            if at > now or tries.get(item["name"], 0) >= 5:
+                continue
+            if now - at > MAX_LATE:
+                item["status"] = "missed"
+                item["error"] = "more than 3 hours late"
+                record(item, "MISSED: " + item["name"])
+                continue
+            tries[item["name"]] = tries.get(item["name"], 0) + 1
+            if already_on_instagram(item):
+                item["status"] = "posted"
+                record(item, "Already live, marked posted: %s %s" % (item["name"], item.get("permalink", "")))
+                continue
+            try:
+                publish(item)
+                record(item, "Posted: %s %s" % (item["name"], item["permalink"]))
+            except Exception as e:
+                item["error"] = str(e)[:300]
+                if tries[item["name"]] >= 5:
+                    record(item, "FAILED after 5 tries: %s: %s" % (item["name"], item["error"]))
+        time.sleep(30)
+    return 0
 
 
 if __name__ == "__main__":

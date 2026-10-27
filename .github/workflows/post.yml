@@ -11,6 +11,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write
 concurrency:
   group: post
   cancel-in-progress: false
@@ -25,27 +26,14 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
         run: python3 scripts/post.py --check
-      - name: Publish due posts
+      - name: Watch the schedule and post each item at its slot
         if: ${{ github.event_name == 'schedule' || !inputs.check_only }}
-        id: pub
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
-        run: python3 scripts/post.py --wait-hours 5.5
-        continue-on-error: true
-      - name: Save state and notify
-        if: ${{ github.event_name == 'schedule' || !inputs.check_only }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/post.py --serve-hours 5.4
+      - name: Start the next watcher so coverage never has a gap
+        if: ${{ always() && (github.event_name == 'schedule' || !inputs.check_only) }}
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          if [ -f notes.md ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-            mv notes.md /tmp/notes.md
-            git add schedule.json
-            git commit -m "Update post status" || true
-            git pull --rebase -q origin main && git push -q origin HEAD:main || true
-            gh issue create --title "$(head -1 /tmp/notes.md | cut -c1-80)" --body-file /tmp/notes.md || true
-          fi
-      - name: Fail the run if a post failed
-        if: ${{ steps.pub.outcome == 'failure' }}
-        run: exit 1
+        run: sleep 60 && gh workflow run post.yml -f check_only=false
