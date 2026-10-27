@@ -1,0 +1,11 @@
+BSL and SSL, explained in 30 seconds.
+
+BSL = Buy-Side Liquidity: orders resting above highs. Sellers' stops sit there, and breakout traders' buy orders.
+SSL = Sell-Side Liquidity: orders resting below lows. Buyers' stops sit there, and breakout traders' sell orders.
+
+ICT's view is that price often reaches for these pools to fill bigger orders. Spotting them gives you context. It is not a signal, and it is not a reason to enter.
+
+Save this for your next session. Which ICT term should I break down next? 👇
+
+#ict #smartmoneyconcepts #liquidity #xauusd #goldtrading #tradingpsychology
+
