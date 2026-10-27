@@ -64,12 +64,40 @@ def publish(item):
     item["status"] = "posted"
 
 
+def fresh_status(name):
+    """Latest status of an item on origin/main (None if unknown), so a post made elsewhere is not repeated."""
+    try:
+        os.system("git fetch -q origin main")
+        out = os.popen("git show origin/main:schedule.json").read()
+        for i in json.loads(out):
+            if i["name"] == name:
+                return i.get("status", "queued")
+    except Exception:
+        pass
+    return None
+
+
+def already_on_instagram(item):
+    """True if a recent post already carries this caption's first line."""
+    try:
+        head = open(item["caption"], encoding="utf-8").read().strip().split("\n")[0][:40]
+        for m in call("GET", "/%s/media" % UID, fields="caption,timestamp", limit=12).get("data", []):
+            ts = datetime.datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+            if head and (m.get("caption") or "").startswith(head) and datetime.datetime.now(datetime.timezone.utc) - ts < datetime.timedelta(hours=24):
+                item["permalink"] = m.get("permalink")
+                return True
+    except Exception:
+        pass
+    return False
+
+
 def main():
     if "--check" in sys.argv:
         print(call("GET", "/me", fields="username"))
         return 0
     items = json.load(open("schedule.json", encoding="utf-8"))
     now = datetime.datetime.now(datetime.timezone.utc)
+    wait_h = float(sys.argv[sys.argv.index("--wait-hours") + 1]) if "--wait-hours" in sys.argv else 0
     failed = False
     notes = []
     for item in items:
@@ -77,7 +105,21 @@ def main():
             continue
         at = datetime.datetime.fromisoformat(item["at"].replace("Z", "+00:00"))
         if at > now:
-            continue
+            # Actions cron is slow and irregular: if the slot is close enough, sleep until it so the post lands on time.
+            if wait_h and at - now <= datetime.timedelta(hours=wait_h):
+                time.sleep(max(0, (at - datetime.datetime.now(datetime.timezone.utc)).total_seconds()))
+                st = fresh_status(item["name"])
+                if st is not None and st != "queued":
+                    item["status"] = st
+                    notes.append("Skipped (already %s elsewhere): %s" % (st, item["name"]))
+                    continue
+                if already_on_instagram(item):
+                    item["status"] = "posted"
+                    notes.append("Skipped (already live): %s" % item["name"])
+                    continue
+                now = datetime.datetime.now(datetime.timezone.utc)
+            else:
+                continue
         if now - at > MAX_LATE:
             item["status"] = "missed"
             item["error"] = "more than 3 hours late"

@@ -17,6 +17,7 @@ concurrency:
 jobs:
   post:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - name: Check connection only
@@ -29,7 +30,7 @@ jobs:
         id: pub
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
-        run: python3 scripts/post.py
+        run: python3 scripts/post.py --wait-hours 5.5
         continue-on-error: true
       - name: Save state and notify
         if: ${{ github.event_name == 'schedule' || !inputs.check_only }}
