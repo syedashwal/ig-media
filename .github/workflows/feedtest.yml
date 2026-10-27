@@ -1,0 +1,10 @@
+name: Feed test
+on: workflow_dispatch
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for s in "GC=F" "BTC-USD" "%5ENDX"; do
+            echo "== $s"; curl -s -m 20 -A "Mozilla/5.0" "https://query1.finance.yahoo.com/v8/finance/chart/$s?interval=5m&range=1d" | head -c 250; echo
+          done
