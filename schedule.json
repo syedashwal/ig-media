@@ -72,19 +72,20 @@
   },
   {
     "name": "What is ICT reel",
-    "at": "2026-10-27T12:50:00Z",
+    "at": "2026-10-27T13:53:00Z",
     "type": "reel",
     "media": [
       "media/2026-10-28-what-is-ict-reel.mp4"
     ],
     "cover": "media/2026-10-28-what-is-ict-reel-cover.jpg",
     "caption": "captions/2026-10-28-what-is-ict-reel.txt",
-    "status": "queued",
-    "note": "backup: posted by GitHub only if Claude has not already posted it"
+    "status": "posted",
+    "note": "backup: posted by GitHub only if Claude has not already posted it",
+    "permalink": "https://www.instagram.com/reel/DfAAmDlGGVQ/"
   },
   {
     "name": "What is FOMC carousel",
-    "at": "2026-10-28T04:20:00Z",
+    "at": "2026-10-28T04:00:00Z",
     "type": "carousel",
     "media": [
       "media/2026-10-28-what-is-fomc-1.jpg",
@@ -95,18 +96,18 @@
     ],
     "caption": "captions/2026-10-28-what-is-fomc.txt",
     "status": "queued",
-    "note": "backup: posted by GitHub only if Claude has not already posted it"
+    "note": "primary: GitHub poster posts at the slot; Claude task is a second path"
   },
   {
     "name": "Fed day image",
-    "at": "2026-10-28T07:50:00Z",
+    "at": "2026-10-28T07:30:00Z",
     "type": "image",
     "media": [
       "media/2026-10-28-fed-tonight.jpg"
     ],
     "caption": "captions/2026-10-28-fed-tonight.txt",
     "status": "queued",
-    "note": "backup: posted by GitHub only if Claude has not already posted it"
+    "note": "primary: GitHub poster posts at the slot; Claude task is a second path"
   },
   {
     "name": "GREED RISK ONE MORE TRADE image",
