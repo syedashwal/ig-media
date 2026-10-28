@@ -148,5 +148,16 @@
   "caption": "captions/2026-10-30-weekend-journal.txt",
   "status": "queued",
   "note": "approved by Ashwal 2026-10-28 16:59 UTC for Fri 8:30 PM IST; GitHub poster posts at the slot"
+ },
+ {
+  "name": "Revenge trading image",
+  "at": "2026-10-29T04:00:00Z",
+  "type": "image",
+  "media": [
+   "media/2026-10-29-revenge-trading.jpg"
+  ],
+  "caption": "captions/2026-10-29-revenge-trading.txt",
+  "status": "queued",
+  "note": "approved by Ashwal 2026-10-28 16:59 UTC for Thu 9:30 AM IST; GitHub poster posts at the slot"
  }
 ]
