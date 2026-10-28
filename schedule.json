@@ -1,137 +1,139 @@
 [
- {
-  "name": "Market-open Trump news image",
-  "at": "2026-10-25T21:30:00Z",
-  "type": "image",
-  "media": [
-   "media/2026-10-26-market-open-trump.jpg"
-  ],
-  "caption": "captions/2026-10-26-market-open-news.txt",
-  "status": "posted",
-  "permalink": "https://www.instagram.com/p/De7ptqkG0Da/"
- },
- {
-  "name": "Week-ahead events image",
-  "at": "2026-10-26T04:20:00Z",
-  "type": "image",
-  "media": [
-   "media/2026-10-26-week-ahead.jpg"
-  ],
-  "caption": "captions/2026-10-26-week-ahead.txt",
-  "status": "posted",
-  "note": "backup: posted by GitHub only if Claude has not already posted it",
-  "permalink": "https://www.instagram.com/p/De8W7HLAIw3/"
- },
- {
-  "name": "How I blew my accounts carousel",
-  "at": "2026-10-26T12:50:00Z",
-  "type": "carousel",
-  "media": [
-   "media/2026-10-26-blown-accounts-1.jpg",
-   "media/2026-10-26-blown-accounts-2.jpg",
-   "media/2026-10-26-blown-accounts-3.jpg",
-   "media/2026-10-26-blown-accounts-4.jpg",
-   "media/2026-10-26-blown-accounts-5.jpg",
-   "media/2026-10-26-blown-accounts-6.jpg",
-   "media/2026-10-26-blown-accounts-7.jpg"
-  ],
-  "caption": "captions/2026-10-26-blown-accounts.txt",
-  "status": "posted",
-  "note": "backup: posted by GitHub only if Claude has not already posted it",
-  "permalink": "https://www.instagram.com/p/De9TNwwIAtp/"
- },
- {
-  "name": "Market size carousel",
-  "at": "2026-10-27T04:00:00Z",
-  "type": "carousel",
-  "media": [
-   "media/2026-10-27-market-size-1.jpg",
-   "media/2026-10-27-market-size-2.jpg",
-   "media/2026-10-27-market-size-3.jpg"
-  ],
-  "caption": "captions/2026-10-27-market-size.txt",
-  "status": "posted",
-  "permalink": "https://www.instagram.com/p/De-8riugAHs/"
- },
- {
-  "name": "What is ICT carousel",
-  "at": "2026-10-27T07:50:00Z",
-  "type": "carousel",
-  "media": [
-   "media/2026-10-27-what-is-ict-1.jpg",
-   "media/2026-10-27-what-is-ict-2.jpg",
-   "media/2026-10-27-what-is-ict-3.jpg",
-   "media/2026-10-27-what-is-ict-4.jpg",
-   "media/2026-10-27-what-is-ict-5.jpg",
-   "media/2026-10-27-what-is-ict-6.jpg",
-   "media/2026-10-27-what-is-ict-7.jpg"
-  ],
-  "caption": "captions/2026-10-27-what-is-ict.txt",
-  "status": "held",
-  "note": "held: Ashwal wants this as a reel instead"
- },
- {
-  "name": "What is ICT reel",
-  "at": "2026-10-27T13:53:00Z",
-  "type": "reel",
-  "media": [
-   "media/2026-10-28-what-is-ict-reel.mp4"
-  ],
-  "cover": "media/2026-10-28-what-is-ict-reel-cover.jpg",
-  "caption": "captions/2026-10-28-what-is-ict-reel.txt",
-  "status": "posted",
-  "note": "backup: posted by GitHub only if Claude has not already posted it",
-  "permalink": "https://www.instagram.com/reel/DfAAmDlGGVQ/"
- },
- {
-  "name": "What is FOMC carousel",
-  "at": "2026-10-28T04:00:00Z",
-  "type": "carousel",
-  "media": [
-   "media/2026-10-28-what-is-fomc-1.jpg",
-   "media/2026-10-28-what-is-fomc-2.jpg",
-   "media/2026-10-28-what-is-fomc-3.jpg",
-   "media/2026-10-28-what-is-fomc-4.jpg",
-   "media/2026-10-28-what-is-fomc-5.jpg"
-  ],
-  "caption": "captions/2026-10-28-what-is-fomc.txt",
-  "status": "posted",
-  "note": "primary: GitHub poster posts at the slot; Claude task is a second path",
-  "permalink": "https://www.instagram.com/p/DfBhpVjDQR1/",
-  "media_id": "18640654309025159"
- },
- {
-  "name": "Fed day image",
-  "at": "2026-10-28T07:30:00Z",
-  "type": "image",
-  "media": [
-   "media/2026-10-28-fed-tonight.jpg"
-  ],
-  "caption": "captions/2026-10-28-fed-tonight.txt",
-  "status": "queued",
-  "note": "primary: GitHub poster posts at the slot; Claude task is a second path"
- },
- {
-  "name": "BSL SSL reel",
-  "at": "2026-10-28T12:30:00Z",
-  "type": "reel",
-  "media": [
-   "media/2026-10-28-bsl-ssl-reel.mp4"
-  ],
-  "cover": "media/2026-10-28-bsl-ssl-reel-cover.jpg",
-  "caption": "captions/2026-10-28-bsl-ssl-reel.txt",
-  "status": "queued",
-  "note": "approved by Ashwal 2026-10-28 04:03 UTC (V2, 'BSL and Ssl at today 6'); GitHub poster posts at the slot"
- },
- {
-  "name": "GREED RISK ONE MORE TRADE image",
-  "at": "2026-10-31T14:20:00Z",
-  "type": "image",
-  "media": [
-   "media/2026-10-27-greed-risk-one-more.jpg"
-  ],
-  "caption": "captions/2026-10-27-greed-risk-one-more.txt",
-  "status": "held",
-  "note": "dropped by Ashwal (2026-10-26)"
- }
+  {
+    "name": "Market-open Trump news image",
+    "at": "2026-10-25T21:30:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-10-26-market-open-trump.jpg"
+    ],
+    "caption": "captions/2026-10-26-market-open-news.txt",
+    "status": "posted",
+    "permalink": "https://www.instagram.com/p/De7ptqkG0Da/"
+  },
+  {
+    "name": "Week-ahead events image",
+    "at": "2026-10-26T04:20:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-10-26-week-ahead.jpg"
+    ],
+    "caption": "captions/2026-10-26-week-ahead.txt",
+    "status": "posted",
+    "note": "backup: posted by GitHub only if Claude has not already posted it",
+    "permalink": "https://www.instagram.com/p/De8W7HLAIw3/"
+  },
+  {
+    "name": "How I blew my accounts carousel",
+    "at": "2026-10-26T12:50:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-10-26-blown-accounts-1.jpg",
+      "media/2026-10-26-blown-accounts-2.jpg",
+      "media/2026-10-26-blown-accounts-3.jpg",
+      "media/2026-10-26-blown-accounts-4.jpg",
+      "media/2026-10-26-blown-accounts-5.jpg",
+      "media/2026-10-26-blown-accounts-6.jpg",
+      "media/2026-10-26-blown-accounts-7.jpg"
+    ],
+    "caption": "captions/2026-10-26-blown-accounts.txt",
+    "status": "posted",
+    "note": "backup: posted by GitHub only if Claude has not already posted it",
+    "permalink": "https://www.instagram.com/p/De9TNwwIAtp/"
+  },
+  {
+    "name": "Market size carousel",
+    "at": "2026-10-27T04:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-10-27-market-size-1.jpg",
+      "media/2026-10-27-market-size-2.jpg",
+      "media/2026-10-27-market-size-3.jpg"
+    ],
+    "caption": "captions/2026-10-27-market-size.txt",
+    "status": "posted",
+    "permalink": "https://www.instagram.com/p/De-8riugAHs/"
+  },
+  {
+    "name": "What is ICT carousel",
+    "at": "2026-10-27T07:50:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-10-27-what-is-ict-1.jpg",
+      "media/2026-10-27-what-is-ict-2.jpg",
+      "media/2026-10-27-what-is-ict-3.jpg",
+      "media/2026-10-27-what-is-ict-4.jpg",
+      "media/2026-10-27-what-is-ict-5.jpg",
+      "media/2026-10-27-what-is-ict-6.jpg",
+      "media/2026-10-27-what-is-ict-7.jpg"
+    ],
+    "caption": "captions/2026-10-27-what-is-ict.txt",
+    "status": "held",
+    "note": "held: Ashwal wants this as a reel instead"
+  },
+  {
+    "name": "What is ICT reel",
+    "at": "2026-10-27T13:53:00Z",
+    "type": "reel",
+    "media": [
+      "media/2026-10-28-what-is-ict-reel.mp4"
+    ],
+    "cover": "media/2026-10-28-what-is-ict-reel-cover.jpg",
+    "caption": "captions/2026-10-28-what-is-ict-reel.txt",
+    "status": "posted",
+    "note": "backup: posted by GitHub only if Claude has not already posted it",
+    "permalink": "https://www.instagram.com/reel/DfAAmDlGGVQ/"
+  },
+  {
+    "name": "What is FOMC carousel",
+    "at": "2026-10-28T04:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-10-28-what-is-fomc-1.jpg",
+      "media/2026-10-28-what-is-fomc-2.jpg",
+      "media/2026-10-28-what-is-fomc-3.jpg",
+      "media/2026-10-28-what-is-fomc-4.jpg",
+      "media/2026-10-28-what-is-fomc-5.jpg"
+    ],
+    "caption": "captions/2026-10-28-what-is-fomc.txt",
+    "status": "posted",
+    "note": "primary: GitHub poster posts at the slot; Claude task is a second path",
+    "permalink": "https://www.instagram.com/p/DfBhpVjDQR1/",
+    "media_id": "18640654309025159"
+  },
+  {
+    "name": "Fed day image",
+    "at": "2026-10-28T07:30:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-10-28-fed-tonight.jpg"
+    ],
+    "caption": "captions/2026-10-28-fed-tonight.txt",
+    "status": "posted",
+    "note": "primary: GitHub poster posts at the slot; Claude task is a second path",
+    "permalink": "https://www.instagram.com/p/DfB5l-AFsNH/",
+    "media_id": "18223669504342369"
+  },
+  {
+    "name": "BSL SSL reel",
+    "at": "2026-10-28T12:30:00Z",
+    "type": "reel",
+    "media": [
+      "media/2026-10-28-bsl-ssl-reel.mp4"
+    ],
+    "cover": "media/2026-10-28-bsl-ssl-reel-cover.jpg",
+    "caption": "captions/2026-10-28-bsl-ssl-reel.txt",
+    "status": "queued",
+    "note": "approved by Ashwal 2026-10-28 04:03 UTC (V2, 'BSL and Ssl at today 6'); GitHub poster posts at the slot"
+  },
+  {
+    "name": "GREED RISK ONE MORE TRADE image",
+    "at": "2026-10-31T14:20:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-10-27-greed-risk-one-more.jpg"
+    ],
+    "caption": "captions/2026-10-27-greed-risk-one-more.txt",
+    "status": "held",
+    "note": "dropped by Ashwal (2026-10-26)"
+  }
 ]
