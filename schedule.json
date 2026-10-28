@@ -159,5 +159,29 @@
   "caption": "captions/2026-10-29-revenge-trading.txt",
   "status": "queued",
   "note": "approved by Ashwal 2026-10-28 16:59 UTC for Thu 9:30 AM IST; GitHub poster posts at the slot"
+ },
+ {
+  "name": "Liquidity pool reel",
+  "at": "2026-10-29T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-10-29-liquidity-pools-reel.mp4"
+  ],
+  "cover": "media/2026-10-29-liquidity-pools-reel-cover.jpg",
+  "caption": "captions/2026-10-29-liquidity-pools-reel.txt",
+  "status": "queued",
+  "note": "approved by Ashwal 2026-10-28; GitHub poster posts at the slot"
+ },
+ {
+  "name": "FVG reel",
+  "at": "2026-10-30T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-10-30-fvg-reel.mp4"
+  ],
+  "cover": "media/2026-10-30-fvg-reel-cover.jpg",
+  "caption": "captions/2026-10-30-fvg-reel.txt",
+  "status": "queued",
+  "note": "approved by Ashwal 2026-10-28; GitHub poster posts at the slot"
  }
 ]
