@@ -1,0 +1,9 @@
+Order Block kya hota hai? Ek candle, ek zone, ek context.
+
+Bade move se pehle ki last opposite candle = Order Block. Wahi zone jahan bade orders baithe the, aur price aksar wapas aata hai.
+
+Par OB akela entry nahi hai. Sirf context hai.
+
+Save karo next chart session ke liye. Next kaunsa ICT term? Comment karo 👇
+
+#ict #smartmoneyconcepts #orderblock #xauusd #goldtrading #tradingpsychology
