@@ -241,8 +241,10 @@
     ],
     "cover": "media/2026-11-03-fomo-reel-cover.jpg",
     "caption": "captions/2026-11-03-fomo-reel.txt",
-    "status": "queued",
-    "note": "approved by Ashwal 2026-10-31 16:30 UTC (scripts, edit, voice); NCS version; GitHub poster posts at the slot"
+    "status": "posted",
+    "note": "approved by Ashwal 2026-10-31 16:30 UTC (scripts, edit, voice); NCS version; GitHub poster posts at the slot",
+    "permalink": "https://www.instagram.com/reel/DfR4zrugqJW/",
+    "media_id": "18102275681435141"
   },
   {
     "name": "Order Block mistakes image",
