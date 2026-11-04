@@ -254,8 +254,10 @@
       "media/2026-11-04-order-block-mistakes.jpg"
     ],
     "caption": "captions/2026-11-04-order-block-mistakes.txt",
-    "status": "queued",
-    "note": "approved by Ashwal 2026-10-31 17:19 UTC; GitHub poster posts at the slot"
+    "status": "posted",
+    "note": "approved by Ashwal 2026-10-31 17:19 UTC; GitHub poster posts at the slot",
+    "permalink": "https://www.instagram.com/p/DfTjIfzER6a/",
+    "media_id": "18500151964103290"
   },
   {
     "name": "Standard Deviation reel",
