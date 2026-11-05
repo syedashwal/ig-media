@@ -295,8 +295,10 @@
     ],
     "cover": "media/2026-11-05-fvg-reel-cover.jpg",
     "caption": "captions/2026-11-05-fvg-reel.txt",
-    "status": "queued",
-    "note": "approved by Ashwal 2026-10-31 16:30 UTC (scripts, edit, voice); NCS version; GitHub poster posts at the slot"
+    "status": "posted",
+    "note": "approved by Ashwal 2026-10-31 16:30 UTC (scripts, edit, voice); NCS version; GitHub poster posts at the slot",
+    "permalink": "https://www.instagram.com/reel/DfXCRKWCuaV/",
+    "media_id": "17963979387251026"
   },
   {
     "name": "Red day reel",
