@@ -309,8 +309,10 @@
     ],
     "cover": "media/2026-11-06-red-day-reel-cover.jpg",
     "caption": "captions/2026-11-06-red-day-reel.txt",
-    "status": "queued",
-    "note": "approved by Ashwal 2026-10-31 16:30 UTC (scripts, edit, voice); NCS version; GitHub poster posts at the slot"
+    "status": "posted",
+    "note": "approved by Ashwal 2026-10-31 16:30 UTC (scripts, edit, voice); NCS version; GitHub poster posts at the slot",
+    "permalink": "https://www.instagram.com/reel/DfZnFL0FGFL/",
+    "media_id": "18436418065147005"
   },
   {
     "name": "Weekly scorecard image",
