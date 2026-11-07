@@ -801,6 +801,18 @@
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
  },
  {
+  "name": "News spike trap reel",
+  "at": "2026-12-03T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-12-03-news-spike-trap-reel.mp4"
+  ],
+  "cover": "media/2026-12-03-news-spike-trap-reel-cover.jpg",
+  "caption": "captions/2026-12-03-news-spike-trap-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "journal prompts carousel",
   "at": "2026-12-04T16:00:00Z",
   "type": "carousel",
