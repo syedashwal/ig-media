@@ -813,6 +813,18 @@
   "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
  },
  {
+  "name": "What I journal reel",
+  "at": "2026-12-04T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-12-04-what-i-journal-reel.mp4"
+  ],
+  "cover": "media/2026-12-04-what-i-journal-reel-cover.jpg",
+  "caption": "captions/2026-12-04-what-i-journal-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "journal prompts carousel",
   "at": "2026-12-04T16:00:00Z",
   "type": "carousel",
@@ -843,6 +855,18 @@
   "caption": "captions/2026-12-07-drawdown-math.txt",
   "status": "queued",
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+ },
+ {
+  "name": "-50% needs +100% reel",
+  "at": "2026-12-07T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-12-07-minus-50-needs-plus-100-reel.mp4"
+  ],
+  "cover": "media/2026-12-07-minus-50-needs-plus-100-reel-cover.jpg",
+  "caption": "captions/2026-12-07-minus-50-needs-plus-100-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
  },
  {
   "name": "wait for the close image",
