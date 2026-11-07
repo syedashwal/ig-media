@@ -518,6 +518,18 @@
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
  },
  {
+  "name": "Hold a winner reel",
+  "at": "2026-11-18T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-11-18-hold-a-winner-reel.mp4"
+  ],
+  "cover": "media/2026-11-18-hold-a-winner-reel-cover.jpg",
+  "caption": "captions/2026-11-18-hold-a-winner-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "Fewer better trades image",
   "at": "2026-11-19T04:00:00Z",
   "type": "image",
@@ -527,6 +539,30 @@
   "caption": "captions/2026-11-19-fewer-better-trades.txt",
   "status": "queued",
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+ },
+ {
+  "name": "Long wick reel",
+  "at": "2026-11-19T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-11-19-long-wick-reel.mp4"
+  ],
+  "cover": "media/2026-11-19-long-wick-reel-cover.jpg",
+  "caption": "captions/2026-11-19-long-wick-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
+  "name": "$100 loss reel",
+  "at": "2026-11-20T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-11-20-100-dollar-loss-reel.mp4"
+  ],
+  "cover": "media/2026-11-20-100-dollar-loss-reel-cover.jpg",
+  "caption": "captions/2026-11-20-100-dollar-loss-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
  },
  {
   "name": "Weekly review carousel",
@@ -582,6 +618,18 @@
   "caption": "captions/2026-11-24-change-of-character.txt",
   "status": "queued",
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+ },
+ {
+  "name": "Premium vs discount reel",
+  "at": "2026-11-24T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-11-24-premium-vs-discount-reel.mp4"
+  ],
+  "cover": "media/2026-11-24-premium-vs-discount-reel-cover.jpg",
+  "caption": "captions/2026-11-24-premium-vs-discount-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
  },
  {
   "name": "When gold moves carousel",
