@@ -942,6 +942,18 @@
   "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
  },
  {
+  "name": "Friday off reel",
+  "at": "2026-12-11T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-12-11-friday-off-reel.mp4"
+  ],
+  "cover": "media/2026-12-11-friday-off-reel-cover.jpg",
+  "caption": "captions/2026-12-11-friday-off-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "friday habits carousel",
   "at": "2026-12-11T16:00:00Z",
   "type": "carousel",
