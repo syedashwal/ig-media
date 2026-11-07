@@ -492,6 +492,18 @@
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
  },
  {
+  "name": "Market structure reel",
+  "at": "2026-11-17T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-11-17-market-structure-reel.mp4"
+  ],
+  "cover": "media/2026-11-17-market-structure-reel-cover.jpg",
+  "caption": "captions/2026-11-17-market-structure-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "Support becomes resistance carousel",
   "at": "2026-11-18T04:00:00Z",
   "type": "carousel",
@@ -547,6 +559,18 @@
   "caption": "captions/2026-11-23-blown-account-stages.txt",
   "status": "queued",
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+ },
+ {
+  "name": "Breakout or fakeout reel",
+  "at": "2026-11-23T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-11-23-breakout-or-fakeout-reel.mp4"
+  ],
+  "cover": "media/2026-11-23-breakout-or-fakeout-reel-cover.jpg",
+  "caption": "captions/2026-11-23-breakout-or-fakeout-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
  },
  {
   "name": "Change of character image",
