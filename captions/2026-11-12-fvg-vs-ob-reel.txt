@@ -1,0 +1,10 @@
+FVG vs Order Block. Both are zones. Fark kya hai?
+
+Order Block: the last opposite candle before a big move. It shows where orders were sitting.
+FVG: three candles, and the gap between the wicks of candle 1 and candle 3. It shows where price left in a hurry.
+
+Both are context, not entries.
+
+Save karo for later 🔖
+
+#ict #smartmoneyconcepts #fairvaluegap #orderblock #xauusd #goldtrading

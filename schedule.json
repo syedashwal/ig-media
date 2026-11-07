@@ -366,6 +366,18 @@
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
  },
  {
+  "name": "Stop hunt reel",
+  "at": "2026-11-10T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-11-10-stop-hunt-reel.mp4"
+  ],
+  "cover": "media/2026-11-10-stop-hunt-reel-cover.jpg",
+  "caption": "captions/2026-11-10-stop-hunt-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "1% risk carousel",
   "at": "2026-11-11T04:00:00Z",
   "type": "carousel",
@@ -380,6 +392,18 @@
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
  },
  {
+  "name": "Revenge trade reel",
+  "at": "2026-11-11T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-11-11-revenge-trade-reel.mp4"
+  ],
+  "cover": "media/2026-11-11-revenge-trade-reel-cover.jpg",
+  "caption": "captions/2026-11-11-revenge-trade-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "Stop after two image",
   "at": "2026-11-12T04:00:00Z",
   "type": "image",
@@ -389,6 +413,18 @@
   "caption": "captions/2026-11-12-stop-after-two.txt",
   "status": "queued",
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+ },
+ {
+  "name": "FVG vs OB reel",
+  "at": "2026-11-12T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-11-12-fvg-vs-ob-reel.mp4"
+  ],
+  "cover": "media/2026-11-12-fvg-vs-ob-reel-cover.jpg",
+  "caption": "captions/2026-11-12-fvg-vs-ob-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
  },
  {
   "name": "Weekend journal carousel",
