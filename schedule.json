@@ -326,5 +326,225 @@
     "note": "approved by Ashwal 2026-10-31 17:19 UTC; GitHub poster posts at the slot",
     "permalink": "https://www.instagram.com/p/DfZ_Ey-lYXn/",
     "media_id": "17930507076186030"
+  },
+  {
+    "name": "Greed signs carousel",
+    "at": "2026-11-09T04:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-11-09-greed-signs-1.jpg",
+      "media/2026-11-09-greed-signs-2.jpg",
+      "media/2026-11-09-greed-signs-3.jpg",
+      "media/2026-11-09-greed-signs-4.jpg",
+      "media/2026-11-09-greed-signs-5.jpg"
+    ],
+    "caption": "captions/2026-11-09-greed-signs.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Where are the stops image",
+    "at": "2026-11-10T04:00:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-11-10-where-are-the-stops.jpg"
+    ],
+    "caption": "captions/2026-11-10-where-are-the-stops.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "1% risk carousel",
+    "at": "2026-11-11T04:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-11-11-one-percent-risk-1.jpg",
+      "media/2026-11-11-one-percent-risk-2.jpg",
+      "media/2026-11-11-one-percent-risk-3.jpg",
+      "media/2026-11-11-one-percent-risk-4.jpg"
+    ],
+    "caption": "captions/2026-11-11-one-percent-risk.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Stop after two image",
+    "at": "2026-11-12T04:00:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-11-12-stop-after-two.jpg"
+    ],
+    "caption": "captions/2026-11-12-stop-after-two.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Weekend journal carousel",
+    "at": "2026-11-13T16:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-11-13-weekend-journal-1.jpg",
+      "media/2026-11-13-weekend-journal-2.jpg",
+      "media/2026-11-13-weekend-journal-3.jpg",
+      "media/2026-11-13-weekend-journal-4.jpg",
+      "media/2026-11-13-weekend-journal-5.jpg"
+    ],
+    "caption": "captions/2026-11-13-weekend-journal.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Read the candle carousel",
+    "at": "2026-11-16T04:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-11-16-read-the-candle-1.jpg",
+      "media/2026-11-16-read-the-candle-2.jpg",
+      "media/2026-11-16-read-the-candle-3.jpg",
+      "media/2026-11-16-read-the-candle-4.jpg",
+      "media/2026-11-16-read-the-candle-5.jpg"
+    ],
+    "caption": "captions/2026-11-16-read-the-candle.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Trend 3 questions image",
+    "at": "2026-11-17T04:00:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-11-17-trend-3-questions.jpg"
+    ],
+    "caption": "captions/2026-11-17-trend-3-questions.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Support becomes resistance carousel",
+    "at": "2026-11-18T04:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-11-18-support-becomes-resistance-1.jpg",
+      "media/2026-11-18-support-becomes-resistance-2.jpg",
+      "media/2026-11-18-support-becomes-resistance-3.jpg",
+      "media/2026-11-18-support-becomes-resistance-4.jpg"
+    ],
+    "caption": "captions/2026-11-18-support-becomes-resistance.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Fewer better trades image",
+    "at": "2026-11-19T04:00:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-11-19-fewer-better-trades.jpg"
+    ],
+    "caption": "captions/2026-11-19-fewer-better-trades.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Weekly review carousel",
+    "at": "2026-11-20T16:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-11-20-weekly-review-4-boxes-1.jpg",
+      "media/2026-11-20-weekly-review-4-boxes-2.jpg",
+      "media/2026-11-20-weekly-review-4-boxes-3.jpg",
+      "media/2026-11-20-weekly-review-4-boxes-4.jpg",
+      "media/2026-11-20-weekly-review-4-boxes-5.jpg",
+      "media/2026-11-20-weekly-review-4-boxes-6.jpg"
+    ],
+    "caption": "captions/2026-11-20-weekly-review-4-boxes.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Blown account stages carousel",
+    "at": "2026-11-23T04:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-11-23-blown-account-stages-1.jpg",
+      "media/2026-11-23-blown-account-stages-2.jpg",
+      "media/2026-11-23-blown-account-stages-3.jpg",
+      "media/2026-11-23-blown-account-stages-4.jpg",
+      "media/2026-11-23-blown-account-stages-5.jpg",
+      "media/2026-11-23-blown-account-stages-6.jpg"
+    ],
+    "caption": "captions/2026-11-23-blown-account-stages.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Change of character image",
+    "at": "2026-11-24T04:00:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-11-24-change-of-character.jpg"
+    ],
+    "caption": "captions/2026-11-24-change-of-character.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "When gold moves carousel",
+    "at": "2026-11-25T04:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-11-25-when-gold-moves-1.jpg",
+      "media/2026-11-25-when-gold-moves-2.jpg",
+      "media/2026-11-25-when-gold-moves-3.jpg",
+      "media/2026-11-25-when-gold-moves-4.jpg",
+      "media/2026-11-25-when-gold-moves-5.jpg"
+    ],
+    "caption": "captions/2026-11-25-when-gold-moves.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Thanksgiving rules image",
+    "at": "2026-11-26T04:00:00Z",
+    "type": "image",
+    "media": [
+      "media/2026-11-26-thanksgiving-rules.jpg"
+    ],
+    "caption": "captions/2026-11-26-thanksgiving-rules.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "November recap carousel",
+    "at": "2026-11-27T16:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-11-27-november-rules-recap-1.jpg",
+      "media/2026-11-27-november-rules-recap-2.jpg",
+      "media/2026-11-27-november-rules-recap-3.jpg",
+      "media/2026-11-27-november-rules-recap-4.jpg",
+      "media/2026-11-27-november-rules-recap-5.jpg",
+      "media/2026-11-27-november-rules-recap-6.jpg",
+      "media/2026-11-27-november-rules-recap-7.jpg"
+    ],
+    "caption": "captions/2026-11-27-november-rules-recap.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+  },
+  {
+    "name": "Monthly review carousel",
+    "at": "2026-11-30T04:00:00Z",
+    "type": "carousel",
+    "media": [
+      "media/2026-11-30-monthly-review-1.jpg",
+      "media/2026-11-30-monthly-review-2.jpg",
+      "media/2026-11-30-monthly-review-3.jpg",
+      "media/2026-11-30-monthly-review-4.jpg",
+      "media/2026-11-30-monthly-review-5.jpg",
+      "media/2026-11-30-monthly-review-6.jpg",
+      "media/2026-11-30-monthly-review-7.jpg"
+    ],
+    "caption": "captions/2026-11-30-monthly-review.txt",
+    "status": "queued",
+    "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
   }
 ]
