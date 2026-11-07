@@ -647,6 +647,18 @@
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
  },
  {
+  "name": "Thanksgiving week reel",
+  "at": "2026-11-25T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-11-25-thanksgiving-week-reel.mp4"
+  ],
+  "cover": "media/2026-11-25-thanksgiving-week-reel-cover.jpg",
+  "caption": "captions/2026-11-25-thanksgiving-week-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "Thanksgiving rules image",
   "at": "2026-11-26T04:00:00Z",
   "type": "image",
@@ -656,6 +668,18 @@
   "caption": "captions/2026-11-26-thanksgiving-rules.txt",
   "status": "queued",
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
+ },
+ {
+  "name": "Top-down reel",
+  "at": "2026-11-26T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-11-26-top-down-reel.mp4"
+  ],
+  "cover": "media/2026-11-26-top-down-reel-cover.jpg",
+  "caption": "captions/2026-11-26-top-down-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
  },
  {
   "name": "November recap carousel",
