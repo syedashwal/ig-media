@@ -1,9 +1,7 @@
 name: Refresh IG token
 on:
   workflow_dispatch:
-  push:
-    paths: [".github/workflows/refresh-token.yml"]
-  schedule:
+    schedule:
     - cron: "17 3 1,15 * *"
 permissions:
   contents: read
@@ -15,13 +13,17 @@ jobs:
       - env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           GH_TOKEN: ${{ github.token }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           r=$(curl -s "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=$IG_TOKEN")
           new=$(echo "$r" | python3 -c "import sys,json;print(json.load(sys.stdin).get('access_token',''))")
           exp=$(echo "$r" | python3 -c "import sys,json;d=json.load(sys.stdin);print(d.get('expires_in', d.get('error',{}).get('message','?')))")
           if [ -z "$new" ]; then status="FAILED"; same="n/a"
           elif [ "$new" = "$IG_TOKEN" ]; then status="OK"; same="yes (secret stays valid, no update needed)"
-          else status="OK, NEW TOKEN"; same="no (GitHub secret IG_TOKEN must be updated)"; fi
+          elif [ -n "$GH_PAT" ]; then
+            echo "::add-mask::$new"
+            if printf '%s' "$new" | GH_TOKEN="$GH_PAT" gh secret set IG_TOKEN -R "$GITHUB_REPOSITORY"; then status="OK, secret updated"; same="no, IG_TOKEN secret updated automatically"; else status="FAILED to update secret"; same="no"; fi
+          else status="OK, NEW TOKEN NOT SAVED"; same="no. Add a GH_PAT secret so it saves automatically"; fi
           days=$(python3 -c "e='$exp';print(round(int(e)/86400,1) if e.isdigit() else e)")
           gh issue create -R "$GITHUB_REPOSITORY" -t "Token refresh $status" -b "expires_in days: $days
           same token string: $same
