@@ -1,7 +1,7 @@
 name: Refresh IG token
 on:
   workflow_dispatch:
-    schedule:
+  schedule:
     - cron: "17 3 1,15 * *"
 permissions:
   contents: read
