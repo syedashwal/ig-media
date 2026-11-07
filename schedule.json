@@ -930,6 +930,18 @@
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
  },
  {
+  "name": "Win rate myth reel",
+  "at": "2026-12-10T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-12-10-win-rate-myth-reel.mp4"
+  ],
+  "cover": "media/2026-12-10-win-rate-myth-reel-cover.jpg",
+  "caption": "captions/2026-12-10-win-rate-myth-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "friday habits carousel",
   "at": "2026-12-11T16:00:00Z",
   "type": "carousel",
