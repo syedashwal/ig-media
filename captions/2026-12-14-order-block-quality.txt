@@ -1,0 +1,11 @@
+Not every Order Block works. Good vs bad.
+
+1. Good: a strong move after it. Displacement away from the block shows real orders were there.
+2. Good: it broke structure. The move from the block took out a key high or low.
+3. Bad: no move, no break. A random candle before a small drift is just a candle.
+
+Har candle OB nahi hoti.
+
+Quality over quantity. Save this and send it to a trader who needs it.
+
+#ict #orderblock #xauusd #goldtrading #forextrading #tradingpsychology #discipline

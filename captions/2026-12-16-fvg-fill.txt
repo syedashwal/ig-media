@@ -1,0 +1,11 @@
+Does price fill the whole gap? Not always.
+
+1. Full fill. Price returns and closes the entire gap. Common in slower markets.
+2. Half fill (50%). Strong markets often only reach the middle of the gap before moving on.
+3. No fill. Very strong moves can leave the gap behind for a long time.
+
+Gap = context.
+
+The gap is a zone, not a promise. Save this and send it to a trader who needs it.
+
+#ict #fairvaluegap #xauusd #goldtrading #forextrading #tradingpsychology #discipline
