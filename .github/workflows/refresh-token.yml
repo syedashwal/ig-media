@@ -1,6 +1,8 @@
 name: Refresh IG token
 on:
   workflow_dispatch:
+  push:
+    paths: [".github/workflows/refresh-token.yml"]
   schedule:
     - cron: "17 3 1,15 * *"
 permissions:
@@ -28,3 +30,4 @@ jobs:
           gh issue create -R "$GITHUB_REPOSITORY" -t "Token refresh $status" -b "expires_in days: $days
           same token string: $same
           run: $(date -u)"
+# trigger 1
