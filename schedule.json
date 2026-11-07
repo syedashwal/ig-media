@@ -984,6 +984,18 @@
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
  },
  {
+  "name": "Good OB vs bad OB reel",
+  "at": "2026-12-14T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-12-14-good-ob-vs-bad-ob-reel.mp4"
+  ],
+  "cover": "media/2026-12-14-good-ob-vs-bad-ob-reel-cover.jpg",
+  "caption": "captions/2026-12-14-good-ob-vs-bad-ob-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "boredom image",
   "at": "2026-12-15T04:00:00Z",
   "type": "image",
