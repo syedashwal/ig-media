@@ -1266,6 +1266,18 @@
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
  },
  {
+  "name": "One rule for 2027 reel",
+  "at": "2026-12-29T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-12-29-one-rule-for-2027-reel.mp4"
+  ],
+  "cover": "media/2026-12-29-one-rule-for-2027-reel-cover.jpg",
+  "caption": "captions/2026-12-29-one-rule-for-2027-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "plan 2027 carousel",
   "at": "2026-12-30T04:00:00Z",
   "type": "carousel",
