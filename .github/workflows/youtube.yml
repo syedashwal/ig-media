@@ -5,7 +5,7 @@ on:
       action:
         description: 'check = show channel, auth-url = print sign-in link, auth = save sign-in code, test = private test upload'
         type: choice
-        options: [check, auth-url, auth, test]
+        options: [check, auth-url, auth, test, thumbs]
         default: check
       value:
         description: 'auth: the full http://localhost/?code=... address. test: schedule item name.'
@@ -39,6 +39,7 @@ jobs:
                   out=$(YT_REFRESH_TOKEN="$rt" python3 scripts/youtube.py --check 2>&1); t="YouTube connected"
                 else out="Got a refresh token but could not save the YT_REFRESH_TOKEN secret (GH_PAT)."; t="YouTube auth FAILED"; fi
               else out=$(cat /tmp/err); t="YouTube auth FAILED"; fi ;;
+            thumbs)   out=$(python3 scripts/youtube.py --thumbs 2>&1) && t="YouTube thumbnails" || t="YouTube thumbnails FAILED" ;;
             test)     out=$(python3 scripts/youtube.py --test "$VALUE" 2>&1) && t="YouTube test upload OK" || t="YouTube test upload FAILED" ;;
           esac
           echo "$out"

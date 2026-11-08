@@ -92,7 +92,28 @@ def upload(item, privacy):
     item["yt"] = "posted"
     item["yt_at"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     item.pop("yt_error", None)
+    set_thumbnail(item)
     return item["yt_url"]
+
+
+def set_thumbnail(item):
+    """Use the reel's Instagram cover as the YouTube thumbnail. Never fails the upload."""
+    cover = item.get("cover")
+    if not cover or not item.get("yt_id") or not os.path.exists(cover):
+        return False
+    try:
+        with open(cover, "rb") as f:
+            req = urllib.request.Request(
+                "https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=" + item["yt_id"],
+                data=f.read(), method="POST",
+                headers={"Authorization": "Bearer " + access_token(), "Content-Type": "image/jpeg"})
+        http(req)
+        item["yt_thumb"] = "set"
+        item.pop("yt_thumb_error", None)
+        return True
+    except Exception as e:
+        item["yt_thumb_error"] = str(e)[:200]
+        return False
 
 
 def pick(items, now, cfg, skip=()):
@@ -144,6 +165,13 @@ def main():
         time.sleep(20)
         v = api("GET", "/videos", part="status", id=item["yt_id"]).get("items", [{}])[0].get("status", {})
         print("YouTube reports privacyStatus=%s uploadStatus=%s" % (v.get("privacyStatus"), v.get("uploadStatus")))
+        return 0
+    if "--thumbs" in sys.argv:
+        # Set the cover as thumbnail on every reel already on YouTube.
+        for item in json.load(open("schedule.json", encoding="utf-8")):
+            if item.get("yt_id"):
+                ok = set_thumbnail(item)
+                print(item["name"], "thumbnail", "set" if ok else "FAILED: " + item.get("yt_thumb_error", "no cover"))
         return 0
     if "--auth-code" in sys.argv:
         # One-time: swap the sign-in code for a refresh token and print it (masked by the workflow).

@@ -159,7 +159,7 @@ def record(item, notes):
         items = json.load(open("schedule.json", encoding="utf-8"))
         for i in items:
             if i["name"] == item["name"]:
-                for k in ("status", "permalink", "media_id", "error", "yt", "yt_id", "yt_url", "yt_at", "yt_error"):
+                for k in ("status", "permalink", "media_id", "error", "yt", "yt_id", "yt_url", "yt_at", "yt_error", "yt_thumb", "yt_thumb_error"):
                     if k in item:
                         i[k] = item[k]
         json.dump(items, open("schedule.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
