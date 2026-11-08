@@ -27,8 +27,8 @@
     "caption": "captions/2026-10-26-who-i-am-reel.txt",
     "status": "posted",
     "note": "posted to Instagram outside the watcher; listed here for the YouTube backlog",
-    "yt": "hold",
-    "yt_note": "swapping copyrighted song for an original track"
+    "yt": "queued",
+    "yt_media": "media/2026-10-26-who-i-am-yt.mp4"
   },
   {
     "name": "Market-open Trump news image",
@@ -113,8 +113,8 @@
     "status": "posted",
     "note": "backup: posted by GitHub only if Claude has not already posted it",
     "permalink": "https://www.instagram.com/reel/DfAAmDlGGVQ/",
-    "yt": "hold",
-    "yt_note": "swapping copyrighted song for an original track"
+    "yt": "queued",
+    "yt_media": "media/2026-10-28-what-is-ict-reel-yt.mp4"
   },
   {
     "name": "What is FOMC carousel",
