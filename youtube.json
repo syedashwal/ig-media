@@ -1,6 +1,6 @@
 {
   "enabled": true,
   "privacy": "public",
-  "backlog_gap_hours": 0.5,
-  "note": "Switched on 2026-11-08 after a public test upload stayed public. Backlog of past reels drips one every 30 min (quota ~6 uploads/day)."
+  "backlog_gap_hours": 1.5,
+  "note": "Backlog drips one old reel every 1.5 h so the daily upload quota (about 6 per day, resets 1:30 PM IST) always leaves room for the 6 PM IST reel."
 }
