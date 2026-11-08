@@ -1,0 +1,6 @@
+{
+  "enabled": false,
+  "privacy": "public",
+  "backlog_gap_hours": 5,
+  "note": "Turn enabled on only after Google approves the YouTube API audit; before that, API uploads are locked to private."
+}

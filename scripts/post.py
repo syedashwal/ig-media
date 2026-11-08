@@ -159,7 +159,7 @@ def record(item, notes):
         items = json.load(open("schedule.json", encoding="utf-8"))
         for i in items:
             if i["name"] == item["name"]:
-                for k in ("status", "permalink", "media_id", "error"):
+                for k in ("status", "permalink", "media_id", "error", "yt", "yt_id", "yt_url", "yt_at", "yt_error"):
                     if k in item:
                         i[k] = item[k]
         json.dump(items, open("schedule.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
@@ -174,10 +174,38 @@ def record(item, notes):
         os.system('gh issue create --title "%s" --body-file /tmp/notes.md || true' % notes.split("\n")[0][:80].replace('"', ""))
 
 
+def youtube_step(wait):
+    """Upload at most one due reel to YouTube Shorts. Silent no-op until YouTube is configured and enabled."""
+    try:
+        import youtube
+    except Exception:
+        return
+    cfg = youtube.settings()
+    if not cfg.get("enabled") or not youtube.configured():
+        return
+    sync()
+    items = json.load(open("schedule.json", encoding="utf-8"))
+    now = datetime.datetime.now(datetime.timezone.utc)
+    item = youtube.pick(items, now, cfg, skip={k for k, v in wait.items() if time.time() < v})
+    if not item:
+        return
+    n = wait.get(item["name"] + "#n", 0) + 1
+    wait[item["name"] + "#n"] = n
+    try:
+        url = youtube.upload(item, cfg.get("privacy", "public"))
+        record(item, "YouTube Short posted: %s %s" % (item["name"], url))
+    except Exception as e:
+        item["yt_error"] = str(e)[:300]
+        wait[item["name"]] = time.time() + 1800 * n   # back off: 30 min, 60 min, ...
+        if n == 3:
+            record(item, "YouTube upload FAILED 3 times (still retrying): %s: %s" % (item["name"], item["yt_error"]))
+
+
 def serve(hours):
     """Poll schedule.json on main every ~30s for hours; post each item at its slot. A post made elsewhere is never repeated."""
     deadline = time.time() + hours * 3600
     tries = {}
+    yt_wait = {}
     while time.time() < deadline:
         sync()
         now = datetime.datetime.now(datetime.timezone.utc)
@@ -204,6 +232,7 @@ def serve(hours):
                 item["error"] = str(e)[:300]
                 if tries[item["name"]] >= 5:
                     record(item, "FAILED after 5 tries: %s: %s" % (item["name"], item["error"]))
+        youtube_step(yt_wait)
         time.sleep(30)
     return 0
 

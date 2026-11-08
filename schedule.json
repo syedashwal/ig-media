@@ -1,5 +1,32 @@
 [
  {
+  "name": "Launch reel",
+  "at": "2026-10-25T13:39:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-10-25-launch.mp4"
+  ],
+  "cover": "media/2026-10-25-launch-cover.jpg",
+  "caption": "captions/2026-10-25-launch-reel.txt",
+  "status": "posted",
+  "permalink": "https://www.instagram.com/reel/De61SjXD7yL/",
+  "note": "posted to Instagram outside the watcher; listed here for the YouTube backlog"
+ },
+ {
+  "name": "Who I am reel",
+  "at": "2026-10-25T16:00:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-10-26-who-i-am.mp4"
+  ],
+  "cover": "media/2026-10-26-who-i-am-cover.jpg",
+  "caption": "captions/2026-10-26-who-i-am-reel.txt",
+  "status": "posted",
+  "note": "posted to Instagram outside the watcher; listed here for the YouTube backlog",
+  "yt": "hold",
+  "yt_note": "copyrighted song in the file (Content ID risk); swap to an original track before YouTube"
+ },
+ {
   "name": "Market-open Trump news image",
   "at": "2026-10-25T21:30:00Z",
   "type": "image",
@@ -81,7 +108,9 @@
   "caption": "captions/2026-10-28-what-is-ict-reel.txt",
   "status": "posted",
   "note": "backup: posted by GitHub only if Claude has not already posted it",
-  "permalink": "https://www.instagram.com/reel/DfAAmDlGGVQ/"
+  "permalink": "https://www.instagram.com/reel/DfAAmDlGGVQ/",
+  "yt": "hold",
+  "yt_note": "copyrighted song in the file (Content ID risk); swap to an original track before YouTube"
  },
  {
   "name": "What is FOMC carousel",

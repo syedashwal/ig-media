@@ -1,0 +1,45 @@
+name: YouTube setup
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'check = show channel, auth-url = print sign-in link, auth = save sign-in code, test = private test upload'
+        type: choice
+        options: [check, auth-url, auth, test]
+        default: check
+      value:
+        description: 'auth: the full http://localhost/?code=... address. test: schedule item name.'
+        required: false
+permissions:
+  contents: read
+  issues: write
+jobs:
+  yt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          ACTION: ${{ inputs.action }}
+          VALUE: ${{ inputs.value }}
+        run: |
+          echo "::add-mask::$VALUE"
+          case "$ACTION" in
+            check)    out=$(python3 scripts/youtube.py --check 2>&1) && t="YouTube check OK" || t="YouTube check FAILED" ;;
+            auth-url) out=$(python3 scripts/youtube.py --auth-url 2>&1) && t="YouTube sign-in link" || t="YouTube sign-in link FAILED" ;;
+            auth)
+              if rt=$(python3 scripts/youtube.py --auth-code "$VALUE" 2>/tmp/err); then
+                echo "::add-mask::$rt"
+                if printf '%s' "$rt" | GH_TOKEN="$GH_PAT" gh secret set YT_REFRESH_TOKEN -R "$GITHUB_REPOSITORY"; then
+                  out=$(YT_REFRESH_TOKEN="$rt" python3 scripts/youtube.py --check 2>&1); t="YouTube connected"
+                else out="Got a refresh token but could not save the YT_REFRESH_TOKEN secret (GH_PAT)."; t="YouTube auth FAILED"; fi
+              else out=$(cat /tmp/err); t="YouTube auth FAILED"; fi ;;
+            test)     out=$(python3 scripts/youtube.py --test "$VALUE" 2>&1) && t="YouTube test upload OK" || t="YouTube test upload FAILED" ;;
+          esac
+          echo "$out"
+          gh issue create -R "$GITHUB_REPOSITORY" -t "$t" -b "$out"

@@ -31,6 +31,9 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           GH_TOKEN: ${{ github.token }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: python3 scripts/post.py --serve-hours 5.4
       - name: Start the next watcher so coverage never has a gap
         if: ${{ always() && (github.event_name == 'schedule' || !inputs.check_only) }}
