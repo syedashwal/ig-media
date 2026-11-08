@@ -1163,6 +1163,18 @@
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
  },
  {
+  "name": "2026 lessons reel",
+  "at": "2026-12-23T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-12-23-2026-lessons-reel.mp4"
+  ],
+  "cover": "media/2026-12-23-2026-lessons-reel-cover.jpg",
+  "caption": "captions/2026-12-23-2026-lessons-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "christmas eve image",
   "at": "2026-12-24T04:00:00Z",
   "type": "image",
