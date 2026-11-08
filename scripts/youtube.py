@@ -134,9 +134,16 @@ def main():
     if "--test" in sys.argv:
         # Private test upload of one reel; does not touch schedule.json.
         name = sys.argv[sys.argv.index("--test") + 1]
+        privacy = "private"
+        if "|" in name:
+            name, privacy = name.split("|", 1)
         items = json.load(open("schedule.json", encoding="utf-8"))
         item = dict(next(i for i in items if i["name"] == name))
-        print("Uploaded PRIVATE test:", upload(item, "private"))
+        url = upload(item, privacy)
+        print("Uploaded %s test: %s" % (privacy.upper(), url))
+        time.sleep(20)
+        v = api("GET", "/videos", part="status", id=item["yt_id"]).get("items", [{}])[0].get("status", {})
+        print("YouTube reports privacyStatus=%s uploadStatus=%s" % (v.get("privacyStatus"), v.get("uploadStatus")))
         return 0
     if "--auth-code" in sys.argv:
         # One-time: swap the sign-in code for a refresh token and print it (masked by the workflow).
