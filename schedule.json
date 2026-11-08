@@ -116,8 +116,11 @@
     "status": "posted",
     "note": "backup: posted by GitHub only if Claude has not already posted it",
     "permalink": "https://www.instagram.com/reel/DfAAmDlGGVQ/",
-    "yt": "queued",
-    "yt_media": "media/2026-10-28-what-is-ict-reel-yt.mp4"
+    "yt": "posted",
+    "yt_media": "media/2026-10-28-what-is-ict-reel-yt.mp4",
+    "yt_id": "BaUP8sbWz3U",
+    "yt_url": "https://youtube.com/shorts/BaUP8sbWz3U",
+    "yt_at": "2026-11-08T19:55:36Z"
   },
   {
     "name": "What is FOMC carousel",
