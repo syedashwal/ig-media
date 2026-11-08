@@ -118,6 +118,8 @@ def pick(items, now, cfg, skip=()):
 
 
 def check():
+    import hashlib
+    print("token fingerprint:", hashlib.sha256(os.environ["YT_REFRESH_TOKEN"].encode()).hexdigest()[:8])
     d = api("GET", "/channels", part="snippet,statistics", mine="true")
     for c in d.get("items", []):
         print("Channel:", c["snippet"]["title"], "| id", c["id"], "| subs", c["statistics"].get("subscriberCount"))
