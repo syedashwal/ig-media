@@ -188,6 +188,15 @@ def youtube_step(wait):
     now = datetime.datetime.now(datetime.timezone.utc)
     item = youtube.pick(items, now, cfg, skip={k for k, v in wait.items() if time.time() < v})
     if not item:
+        # Idle: add the Instagram cover as thumbnail to Shorts that lack one. Probe once per watcher run;
+        # once a probe works (channel phone-verified), fix the rest one per loop.
+        todo = [i for i in items if i.get("yt_id") and i.get("cover") and i.get("yt_thumb") != "set"]
+        if todo and (wait.get("#thumbs_ok") or not wait.get("#thumbs_probed")):
+            wait["#thumbs_probed"] = 1
+            t = todo[0]
+            if youtube.set_thumbnail(t):
+                wait["#thumbs_ok"] = 1
+                record(t, "")
         return
     n = wait.get(item["name"] + "#n", 0) + 1
     wait[item["name"] + "#n"] = n
