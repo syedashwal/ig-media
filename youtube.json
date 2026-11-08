@@ -1,6 +1,6 @@
 {
-  "enabled": false,
+  "enabled": true,
   "privacy": "public",
-  "backlog_gap_hours": 5,
-  "note": "Turn enabled on only after Google approves the YouTube API audit; before that, API uploads are locked to private."
+  "backlog_gap_hours": 0.5,
+  "note": "Switched on 2026-11-08 after a public test upload stayed public. Backlog of past reels drips one every 30 min (quota ~6 uploads/day)."
 }
