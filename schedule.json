@@ -1243,6 +1243,18 @@
   "note": "Ashwal 2026-11-07: no approval needed through Dec 31; GitHub poster posts at the slot"
  },
  {
+  "name": "Year review reel",
+  "at": "2026-12-28T12:30:00Z",
+  "type": "reel",
+  "media": [
+   "media/2026-12-28-year-review-reel.mp4"
+  ],
+  "cover": "media/2026-12-28-year-review-reel-cover.jpg",
+  "caption": "captions/2026-12-28-year-review-reel.txt",
+  "status": "queued",
+  "note": "Ashwal: no approvals needed (2026-11-07); Narrator 2 voice; NCS version; GitHub poster posts at the slot"
+ },
+ {
   "name": "one rule 2027 image",
   "at": "2026-12-29T04:00:00Z",
   "type": "image",
