@@ -128,6 +128,13 @@ def pick(items, now, cfg, skip=()):
         return None
     # Backlog (past reels, or slots missed before YouTube was switched on): one every N hours,
     # never within 1 hour before an upcoming on-time slot.
+    # Keep room in the daily quota (resets at midnight Pacific, ~08:00 UTC) for the day's on-time reel.
+    reset = now.replace(hour=8, minute=0, second=0, microsecond=0)
+    if reset > now:
+        reset -= datetime.timedelta(days=1)
+    today = [i for i in items if i.get("yt_at") and datetime.datetime.fromisoformat(i["yt_at"].replace("Z", "+00:00")) >= reset]
+    if len(today) >= int(cfg.get("backlog_daily_cap", 5)):
+        return None
     gap = datetime.timedelta(hours=float(cfg.get("backlog_gap_hours", 5)))
     last = [datetime.datetime.fromisoformat(i["yt_at"].replace("Z", "+00:00")) for i in items if i.get("yt_at")]
     if last and now - max(last) < gap:

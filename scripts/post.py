@@ -183,6 +183,8 @@ def youtube_step(wait):
     cfg = youtube.settings()
     if not cfg.get("enabled") or not youtube.configured():
         return
+    if time.time() < wait.get("#quota_until", 0):
+        return
     sync()
     items = json.load(open("schedule.json", encoding="utf-8"))
     now = datetime.datetime.now(datetime.timezone.utc)
@@ -206,6 +208,15 @@ def youtube_step(wait):
     except Exception as e:
         item["yt_error"] = str(e)[:300]
         wait[item["name"]] = time.time() + 1800 * n   # back off: 30 min, 60 min, ...
+        if "quotaExceeded" in item["yt_error"] or "uploadLimitExceeded" in item["yt_error"]:
+            # Daily quota used up: pause all YouTube work until just after the Pacific-midnight reset.
+            nxt = datetime.datetime.now(datetime.timezone.utc).replace(hour=8, minute=5, second=0, microsecond=0)
+            if nxt.timestamp() <= time.time():
+                nxt += datetime.timedelta(days=1)
+            wait["#quota_until"] = nxt.timestamp()
+            wait[item["name"]] = 0
+            wait[item["name"] + "#n"] = 0
+            return
         if n == 3:
             record(item, "YouTube upload FAILED 3 times (still retrying): %s: %s" % (item["name"], item["yt_error"]))
 

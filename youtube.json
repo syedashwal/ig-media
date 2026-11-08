@@ -1,6 +1,7 @@
 {
   "enabled": true,
   "privacy": "public",
-  "backlog_gap_hours": 1.5,
-  "note": "Backlog drips one old reel every 1.5 h so the daily upload quota (about 6 per day, resets 1:30 PM IST) always leaves room for the 6 PM IST reel."
+  "backlog_gap_hours": 0.5,
+  "note": "Backlog drips one old reel every 30 min, max 5 uploads per quota day (resets ~08:00 UTC) so the 6 PM IST reel always has quota.",
+  "backlog_daily_cap": 5
 }
