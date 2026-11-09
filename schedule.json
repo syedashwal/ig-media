@@ -361,7 +361,12 @@
     "status": "posted",
     "note": "approved by Ashwal 2026-10-31 16:30 UTC (scripts, edit, voice); NCS version; GitHub poster posts at the slot",
     "permalink": "https://www.instagram.com/reel/DfXCRKWCuaV/",
-    "media_id": "17963979387251026"
+    "media_id": "17963979387251026",
+    "yt": "posted",
+    "yt_id": "0ZNHhFaYeKA",
+    "yt_url": "https://youtube.com/shorts/0ZNHhFaYeKA",
+    "yt_at": "2026-11-09T18:28:18Z",
+    "yt_thumb_error": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The authenticated user doesn't have permissions to upload and set custom video thumbnails.\",\n    \"errors\": [\n      {\n        \"message\": \"The a"
   },
   {
     "name": "Red day reel",
