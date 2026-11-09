@@ -430,8 +430,9 @@
     ],
     "cover": "media/2026-11-09-greed-reel-cover.jpg",
     "caption": "captions/2026-11-09-greed-reel.txt",
-    "status": "queued",
-    "note": "Re-post of the Greed reel without the logo end card (Ashwal, 2026-11-09: no logo anywhere)"
+    "status": "posted",
+    "note": "Re-post of the Greed reel without the logo end card (Ashwal, 2026-11-09: no logo anywhere)",
+    "permalink": null
   },
   {
     "name": "Where are the stops image",
