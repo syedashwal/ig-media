@@ -433,7 +433,8 @@
     "caption": "captions/2026-11-09-greed-reel.txt",
     "status": "posted",
     "note": "Re-post of the Greed reel without the logo end card (Ashwal, 2026-11-09: no logo anywhere)",
-    "permalink": null
+    "permalink": null,
+    "yt_error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\""
   },
   {
     "name": "Where are the stops image",
