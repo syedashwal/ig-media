@@ -162,6 +162,8 @@ def record(item, notes):
                 for k in ("status", "permalink", "media_id", "error", "yt", "yt_id", "yt_url", "yt_at", "yt_error", "yt_thumb", "yt_thumb_error"):
                     if k in item:
                         i[k] = item[k]
+                if item.get("yt") == "posted" and "yt_error" not in item:
+                    i.pop("yt_error", None)
         json.dump(items, open("schedule.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
         git('config user.name "github-actions[bot]"')
         git('config user.email "41898299+github-actions[bot]@users.noreply.github.com"')
