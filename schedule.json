@@ -444,7 +444,12 @@
     "status": "posted",
     "note": "Re-post of the Greed reel without the logo end card (Ashwal, 2026-11-09: no logo anywhere)",
     "permalink": null,
-    "yt_error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\""
+    "yt_error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"",
+    "yt": "posted",
+    "yt_id": "Wdrqti7NkJ0",
+    "yt_url": "https://youtube.com/shorts/Wdrqti7NkJ0",
+    "yt_at": "2026-11-09T19:28:57Z",
+    "yt_thumb_error": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The authenticated user doesn't have permissions to upload and set custom video thumbnails.\",\n    \"errors\": [\n      {\n        \"message\": \"The a"
   },
   {
     "name": "Where are the stops image",
