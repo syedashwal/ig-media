@@ -380,7 +380,12 @@
     "status": "posted",
     "note": "approved by Ashwal 2026-10-31 16:30 UTC (scripts, edit, voice); NCS version; GitHub poster posts at the slot",
     "permalink": "https://www.instagram.com/reel/DfZnFL0FGFL/",
-    "media_id": "18436418065147005"
+    "media_id": "18436418065147005",
+    "yt": "posted",
+    "yt_id": "UJEKs96h_Fs",
+    "yt_url": "https://youtube.com/shorts/UJEKs96h_Fs",
+    "yt_at": "2026-11-09T18:58:48Z",
+    "yt_thumb_error": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The authenticated user doesn't have permissions to upload and set custom video thumbnails.\",\n    \"errors\": [\n      {\n        \"message\": \"The a"
   },
   {
     "name": "Weekly scorecard image",
