@@ -459,7 +459,8 @@
     "yt_id": "Wdrqti7NkJ0",
     "yt_url": "https://youtube.com/shorts/Wdrqti7NkJ0",
     "yt_at": "2026-11-09T19:28:57Z",
-    "yt_thumb_error": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The authenticated user doesn't have permissions to upload and set custom video thumbnails.\",\n    \"errors\": [\n      {\n        \"message\": \"The a"
+    "yt_thumb_error": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The authenticated user doesn't have permissions to upload and set custom video thumbnails.\",\n    \"errors\": [\n      {\n        \"message\": \"The a",
+    "yt_thumb": "set"
   },
   {
     "name": "Where are the stops image",
