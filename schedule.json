@@ -492,7 +492,8 @@
     "yt_id": "d_4C5IqUgvc",
     "yt_url": "https://youtube.com/shorts/d_4C5IqUgvc",
     "yt_at": "2026-11-10T12:31:48Z",
-    "yt_thumb_error": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The authenticated user doesn't have permissions to upload and set custom video thumbnails.\",\n    \"errors\": [\n      {\n        \"message\": \"The a"
+    "yt_thumb_error": "HTTP 403: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The authenticated user doesn't have permissions to upload and set custom video thumbnails.\",\n    \"errors\": [\n      {\n        \"message\": \"The a",
+    "yt_thumb": "set"
   },
   {
     "name": "1% risk carousel",
